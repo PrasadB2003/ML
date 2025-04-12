@@ -4,6 +4,7 @@ markdown
 Copy
 Edit
 # Emotion Detection App
+![Alt text](images/image.jpeg)
 
 This Emotion Detection App leverages machine learning models to classify emotions based on audio inputs. It processes audio files and identifies emotions in the speech, making it useful for applications such as voice-based analytics, mental health applications, or emotion-driven user interaction systems.
 
