@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎵 Emotion Detector from Audio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" />
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+<body>
+  <div class="toggle-container">
+    <label class="toggle-label">
+      🌞 / 🌙
+      <input type="checkbox" id="darkModeToggle">
+    </label>
+  </div>
+
+  <h1>🎧 Upload Audio to Detect Emotion</h1>
+
+  <form action="/predict" class="dropzone" id="audio-dropzone" method="post" enctype="multipart/form-data"></form>
+
+  <div id="result"></div>
+
+  <div id="waveform"></div>
+  <button id="playPauseBtn">▶️ Play / ⏸️ Pause</button>
+
+  <!-- Report Section -->
+  <div id="report">
+    <h2>📊 Emotion Detection Report</h2>
+    <table id="reportTable" border="1" style="margin-top: 20px; border-collapse: collapse; width: 80%;">
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Emotion</th>
+          <th>Emoji</th>
+        </tr>
+      </thead>
+      <tbody id="reportBody">
+        <!-- Filled by script.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
