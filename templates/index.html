@@ -17,9 +17,17 @@
 
   <h1>🎧 Upload Audio to Detect Emotion</h1>
 
-  <form action="/predict" class="dropzone" id="audio-dropzone" method="post" enctype="multipart/form-data"></form>
+  <!-- Flexbox container for dropzone and accuracy display -->
+  <div style="display: flex; justify-content: space-between; gap: 2rem; padding: 2rem;">
+    <!-- Dropzone Box -->
+    <div style="flex: 1;">
+      <form action="/predict" class="dropzone" id="audio-dropzone" method="post" enctype="multipart/form-data"></form>
+      <div id="result" style="margin-top: 1rem;"></div>
+    </div>
 
-  <div id="result"></div>
+    <!-- Model Accuracy Display -->
+    
+  </div>
 
   <div id="waveform"></div>
   <button id="playPauseBtn">▶️ Play / ⏸️ Pause</button>
@@ -43,5 +51,19 @@
 
   <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+  <script>
+    // Fetch model accuracy from Flask server
+    fetch('/model_accuracy')
+      .then(response => response.json())
+      .then(data => {
+        const acc = data.accuracy;
+        document.getElementById("model-accuracy").textContent = `${acc}%`;
+      })
+      .catch(err => {
+        document.getElementById("model-accuracy").textContent = "Error loading accuracy.";
+        console.error(err);
+      });
+  </script>
 </body>
 </html>
