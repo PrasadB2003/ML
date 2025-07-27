@@ -69,12 +69,6 @@ For production-ready deployment, you can use Kubernetes with the provided emotio
 Contributing
 If you'd like to contribute, feel free to fork the repository, make changes, and submit a pull request. Please ensure that your changes are well-documented and include relevant tests if applicable.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgements
-TensorFlow/Keras: For building the emotion detection model.
-
 Flask: For web framework used in this application.
 
 Docker: For easy containerization and deployment.
@@ -84,13 +78,6 @@ OpenCV: (if using for additional features) for handling audio/visual processing.
 sql
 Copy
 Edit
-
-### How to Customize:
-- **Replace `yourusername`** in the clone URL with your actual GitHub username.
-- **Update the acknowledgments** if there are other libraries or technologies you want to credit.
-- **Add links to demo videos** or any other references you have.
-
-Feel free to adjust this README based on any additional features you may have or want to highlight in the app!
 
 
 
