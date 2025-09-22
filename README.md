@@ -13,7 +13,7 @@ This Emotion Detection App leverages machine learning models to classify emotion
 - **Audio Upload**: Upload audio files directly for emotion analysis.
 - **Live Prediction**: Get real-time emotion prediction from live audio input.
 - **Results Download**: Download the results in a readable format after processing.
-- **Dark Mode Toggle**: Switch between dark and light mode for user interface preferences.
+- **Dark Mode Toggle**: Switch between dark and light mode for user interface .
 
 ## Technologies Used
 - **Python**: Main programming language.
