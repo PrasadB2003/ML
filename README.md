@@ -79,6 +79,10 @@ sql
 Copy
 Edit
 
+This project draws inspiration from the following research paper:
+
+Speech Emotion Recognition Using Deep Learning: A Review
+ – This paper provides an extensive review of deep learning techniques applied to speech emotion recognition, highlighting key methodologies and challenges in the field.
 
 
 
