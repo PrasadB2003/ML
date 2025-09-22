@@ -8,3 +8,4 @@ matplotlib==3.10.0
 soundfile==0.13.1
 pydub==0.25.1
 PyAudio==0.2.13
+docker
