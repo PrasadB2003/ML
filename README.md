@@ -8,6 +8,12 @@ Edit
 
 This Emotion Detection App leverages machine learning models to classify emotions based on audio inputs. It processes audio files and identifies emotions in the speech, making it useful for applications such as voice-based analytics, mental health applications, or emotion-driven user interaction systems.
 
+
+## References / Related Work
+This project draws inspiration from the following research paper:
+
+**[Speech Emotion Recognition Using Deep Learning: A Review](https://ieeexplore.ieee.org/document/10959643)** – This paper provides an extensive review of deep learning techniques applied to speech emotion recognition, highlighting key methodologies and challenges in the field.
+
 ## Features
 - **Emotion Recognition**: Detect emotions from audio files.
 - **Audio Upload**: Upload audio files directly for emotion analysis.
